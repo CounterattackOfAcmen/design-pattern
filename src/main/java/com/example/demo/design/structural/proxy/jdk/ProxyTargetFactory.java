@@ -8,6 +8,6 @@ import java.lang.reflect.Proxy;
 public class ProxyTargetFactory {
 
     public static Object getProxy(ITarget target) {
-        return Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(), new ProxyHandler(target));
+        return Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(), new JdkProxyHandler(target));
     }
 }

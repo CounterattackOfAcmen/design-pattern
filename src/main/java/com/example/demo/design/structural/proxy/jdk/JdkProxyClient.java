@@ -3,7 +3,7 @@ package com.example.demo.design.structural.proxy.jdk;
 /**
  * @author zhang
  */
-public class Client {
+public class JdkProxyClient {
 
     public static void main(String[] args) {
         ITarget target = new TargetB();

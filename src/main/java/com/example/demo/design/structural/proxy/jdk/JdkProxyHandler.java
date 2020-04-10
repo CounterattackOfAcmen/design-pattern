@@ -6,11 +6,11 @@ import java.lang.reflect.Method;
 /**
  * @author zhang
  */
-public class ProxyHandler implements InvocationHandler {
+public class JdkProxyHandler implements InvocationHandler {
 
     private ITarget target;
 
-    public ProxyHandler(ITarget target) {
+    public JdkProxyHandler(ITarget target) {
         this.target = target;
     }
 

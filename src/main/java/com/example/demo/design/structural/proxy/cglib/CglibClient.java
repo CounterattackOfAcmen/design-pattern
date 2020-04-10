@@ -3,11 +3,11 @@ package com.example.demo.design.structural.proxy.cglib;
 /**
  * @author zhang
  */
-public class Client {
+public class CglibClient {
 
     public static void main(String[] args) {
-        Target target = new Target();
-        Target proxy = (Target) CglibTargetFactory.getProxy(target);
+        CglibTarget target = new CglibTarget();
+        CglibTarget proxy = (CglibTarget) CglibTargetFactory.getProxy(target);
         proxy.show("[" + target.getClass() + "]已被[" + proxy.getClass() + "]代理。");
     }
 }
